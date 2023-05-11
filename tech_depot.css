@@ -1,0 +1,961 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap');
+
+:root {
+    --font-size1: 3rem;
+    --font-size2: 2rem;
+    --font-size3: 1rem;
+    --font-color1: #bbb;
+    --main-color: #000;
+    --main-color2: #2b2b2b55;
+    --main-color3: #c5c5c511;
+    --main-color4: #034AA6;
+}
+
+
+*, 
+::before, 
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 60.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    color: #c5c5c5;
+}
+
+::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #555;
+    border-radius: 50em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 50em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: '';
+}
+
+/* NAV SECTION */
+
+.nav-section {
+    background-color: #000a;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-section h1 {
+    font-size: var(--font-size1);
+    color: var(--font-color1);
+    width: 6em;
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-section a {
+    text-decoration: none;
+}
+
+#navbar {
+    font-size: var(--font-size2);
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    padding-left: 8.5em;
+}
+
+#navbar ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#navbar li {
+    list-style: none;
+    text-align: center;
+    width: 5em;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #bbb;
+    font-weight: 900;
+}
+
+#navbar a:hover {
+    color: #555;
+}
+
+/* ICONS */
+
+.icons {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5em 0;
+}
+
+.icons-wrapper {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.icons p {
+    font-size: var(--font-size2);
+    margin: 1rem 0 0 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+i {
+    font-size: var(--font-size1);
+}
+
+/* HERO IMAGES */
+
+.hero {
+    width: 100%;
+    height: 450px;
+    background-color: var(--main-color);
+    display: grid;
+    margin-top: 5em;
+}
+
+.hero-image {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+}
+
+.hero2 {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-image2 {
+    width: 95%;
+    height: 100%;
+    border-radius: 5em;
+    margin: auto;
+    object-fit: cover;
+}
+
+.hero3 {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-image3 {
+    width: 95%;
+    height: 100%;
+    border-radius: 5em;
+    margin: auto;
+    object-fit: cover;
+}
+
+.hero4 {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-image4 {
+    width: 95%;
+    height: 400px;
+    border-radius: 5em;
+    margin: auto;
+    object-fit: cover;
+}
+
+.hero5 {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-image5 {
+    width: 95%;
+    height: 500px;
+    border-radius: 5em;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+/* BRANDING NAMES */
+
+.catalog {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 6.5em;
+}
+
+.catalog h2 {
+    font-size: var(--font-size1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.catalog hr {
+    margin: 2em 0;
+    border: 0.5px solid var(--main-color3);
+    width: 40vw;
+}
+
+/* MAIN CONTENT */
+
+.products {
+    width: 95%;
+    height: 100em;
+    background-color: var(--main-color2);
+    color: var(--font-color1);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(1rem, 1fr));
+    place-content: center;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 5em;
+    padding: 1em;
+}
+
+.products p, 
+.products h3 {
+    font-size: var(--font-size2);
+    font-family: 'Nunito', sans-serif;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.image-frame {
+    width: 30em;
+    display: grid;
+    place-content: start;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: var(--main-color3);
+    border-radius: 2em;
+}
+
+.image-frame img {
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #aaa5);
+}
+
+.image-frame img:hover {
+    transform: scale(1.1);
+}
+
+.image-frame2, 
+.image-frame3, 
+.image-frame4, 
+.image-frame5 {
+    display: grid;
+    place-content: start;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: var(--main-color3);
+    border-radius: 2em;
+    width: 30em;
+}
+
+.image-frame2 img {
+    width: 200px;
+    height: 130px;
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #aaa5);
+}
+
+.image-frame2 img:hover {
+    transform: scale(1.1);
+}
+
+.image-frame3 img {
+    width: 210px;
+    height: 170px;
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #aaa5);
+}
+
+.image-frame3 img:hover {
+    transform: scale(1.1);
+}
+
+.image-frame4 img {
+    width: 210px;
+    height: 150px;
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #aaa5);
+}
+
+.image-frame4 img:hover {
+    transform: scale(1.1);
+}
+
+.image-frame5 img {
+    width: 210px;
+    height: 140px;
+    margin: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #aaa5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-frame5 img:hover {
+    transform: scale(1.1);
+}
+
+
+.laptop-name {
+    font-size: var(--font-size2);
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0.5em;
+}
+
+.button {
+    width: 4em;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2em;
+    background-color: var(--main-color4);
+    color: var(--font-color1);
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: transform ease-in-out;
+}
+
+.apple-chipset {
+    margin-top: 4.8rem !important;
+}
+
+.apple-memory {
+    margin-top: 4.79rem !important;
+}
+
+.dell-price {
+    margin-top: 4.8rem !important;
+}
+
+.dell-processor {
+    margin-top: 4.8rem !important;
+}
+
+.dell-ram {
+    margin-top: 4.8rem !important;
+}
+
+.acer-processor {
+    margin-top: 4.8rem !important;
+}
+
+.acer-ram {
+    margin-top: 4.8rem !important;
+}
+
+.lenovo-ram {
+    margin-top: 4.8rem !important;
+}
+
+.asus-processor {
+    margin-top: 4.79rem !important;
+}
+
+.asus-ram {
+    margin-top: 4.79rem !important;
+}
+
+/* GRAPHICS VIDEOS */
+
+.graphics-video {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    padding: 2rem;
+    margin: 5em 0;
+}
+
+.iframe-wrapper {
+    width: 95%;
+    height: 315px;
+    border-radius: 5em;
+    margin: auto;
+    overflow: hidden;
+    background-color: var(--main-color3);
+}
+
+.graphics-video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+/* FOOTER */
+
+.footer-section {
+    width: 95%;
+    height: 300px;
+    background-color: var(--main-color2);
+    margin: 3em auto;
+    border-radius: 5em;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: var(--main-color3);
+    margin: 0;
+    border-radius: 5em;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-content: center;
+}
+
+footer ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    list-style: none;
+    font-size: var(--font-size2);
+    font-family: 'Nunito', sans-serif;
+}
+
+footer ul a {
+    margin: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+footer ul a:hover {
+    color: var(--main-color4);
+}
+
+footer div {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: var(--font-size2);
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem;
+}
+
+footer .dev-name {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+footer a:hover {
+    color: var(--main-color4);
+}
+
+.social-icons {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    margin: auto;
+    column-gap: 3em;
+    padding: 1rem 4em;
+}
+
+.social-icons i {
+    font-size: 3.5rem;
+}
+
+.social-icons a {
+    text-align: center;
+}
+
+/* MEDIA QUERIES MAX-WIDTH: 815PX */
+
+@media (max-width: 815px) {
+    :root {
+        --font-size1: 2rem;
+        --font-size2: 1.5rem;
+        --font-size3: 0.5rem; 
+    }
+
+    *, 
+    ::before, 
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* NAV SECTION */
+
+    .nav-section {
+        background-color: #000a;
+        width: 100%;
+        height: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-section h1 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .nav-section a {
+        text-decoration: none;
+    }
+
+    #navbar {
+        width: 100%;
+        padding: 0;
+    }
+
+    #navbar ul {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        column-gap: 2rem;
+        font-size: var(--font-size1);
+    }
+
+    #navbar li {
+        width: 4em;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        width: 100%;
+        height: 300px;
+    }
+
+    .hero-image {
+        width: 85%;
+        height: 100%;
+    }
+
+    .hero2, 
+    .hero3, 
+    .hero4 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero5 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .hero-image5 {
+        width: 95%;
+        height: 300px;
+    }
+
+    .hero-image4 {
+        width: 95%;
+        height: 250px;
+    }
+
+    /* MAIN CONTENT SECTION */
+
+    .products {
+        width: 95%;
+        height: 150em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        margin-bottom: 4em;
+        padding: 2em;
+    }
+
+    .products h3, 
+    .products p {
+        font-size: var(--font-size2);
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .image-frame, 
+    .image-frame2, 
+    .image-frame3, 
+    .image-frame4, 
+    .image-frame5 {
+        width: 30em;
+        display: grid;
+        place-content: start;
+        background-color: var(--main-color3);
+        border-radius: 3em;
+        margin: 2em auto;
+        padding: 2em;
+    }
+
+    .image-frame2 img {
+        width: 180px;
+        height: 120px;
+    }
+
+    .image-frame3 img {
+        width: 170px;
+        height: 130px;
+    }
+
+    .image-frame4 img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .image-frame5 img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .media-apple-display {
+        margin-top: 2.4em !important;
+    }
+
+    .apple-chipset {
+        margin-top: 1.4rem !important;
+    }
+
+    .apple-memory {
+        margin-top: 1rem !important;
+    }
+
+    .touch-id {
+        margin-top: 1rem !important;
+    }
+
+    .media-apple-chipset {
+        margin-top: 3.55rem !important;
+    }
+
+    .media-apple-memory {
+        margin-top: 1.5rem !important;
+    }
+
+    .dell-price {
+        margin-top: 1rem !important;
+    }
+
+    .dell-processor {
+        margin-top: 1.5rem !important;
+    }
+
+    .dell-ram {
+        margin-top: 1.5rem !important;
+    }
+
+    .lenovo-processor {
+        margin-top: 3.55rem !important;
+    }
+
+    .lenovo-ram {
+        margin-top: 1.5rem !important;
+    }
+
+    .acer-processor {
+        margin-top: 1em !important;
+    }
+
+    .acer-ram {
+        margin-top: 1em !important;
+    }
+
+    .asus-processor {
+        margin-top: 1em !important;
+    }
+
+    .media-asus-processor {
+        margin-top: 2.4em !important;
+    }
+
+    .asus-ram {
+        margin-top: 1em !important;
+    }
+
+    /* GRAPHICS VIDEOS */
+
+    .graphics-video {
+        width: 100%;
+        height: 250px;
+        display: grid;
+        column-gap: 2em;
+    }
+
+    .iframe-wrapper {
+        width: 95%;
+        height: 200px;
+        border-radius: 3em;
+        display: grid;
+        align-items: center;
+    }
+
+    .graphics-video iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer-section {
+        width: 95%;
+        height: 210px;
+        margin-bottom: 2em;
+    }
+
+    footer {
+        width: 100%;
+        height: 210px;
+        margin: 0;
+        display: grid;
+    }
+}
+
+/* MEDIA QUERIES MAX-WIDTH: 415PX */
+
+@media (max-width: 415px) {
+    :root {
+        --font-size1: 2rem;
+        --font-size2: 1rem;
+        --font-size3: 0.5rem;
+    }
+
+    *, 
+    ::before, 
+    ::after {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* NAV SECTION */
+
+    .nav-section {
+        border: none;
+        width: 100%;
+        height: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav-section a {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-section h1 {
+        width: 100%;
+    }
+
+    #navbar {
+        border: none;
+    }
+
+    #navbar ul {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        font-size: 1.8rem;
+    }
+
+    #navbar li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #navbar a {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        width: 100%;
+        height: 150px;
+    }
+
+    .hero-image {
+        width: 90%;
+        height: 100%;
+    }
+
+    /* MAIN CONTENT SECTION */
+
+    .products {
+        border: none;
+        width: 95%;
+        height: 160em;
+        display: grid;
+        align-items: center;
+        column-gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .products h3, 
+    .products p {
+        font-size: 1.5rem;
+    }
+
+    .image-frame, 
+    .image-frame2, 
+    .image-frame3, 
+    .image-frame4, 
+    .image-frame5 {
+        width: 15em;
+        height: 75em !important;
+    }
+
+    .image-frame img {
+        width: 95%;
+        height: 65px;
+    }
+
+    .image-frame2 img {
+        width: 95%;
+        height: 70px;
+    }
+
+    .image-frame3 img {
+        width: 95%;
+        height: 75px;
+    }
+
+    .image-frame4 img {
+        width: 95%;
+        height: 75px;
+    }
+
+    .image-frame5 img {
+        width: 95%;
+        height: 70px;
+    }
+
+    /* GRAPHICS VIDEOS */
+
+    .graphics-video {
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4em;
+    }
+
+    .graphics-video iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .iframe-wrapper {
+        width: 98%;
+        height: 200px;
+        border-radius: 2em;
+        display: grid;
+        align-items: center;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer-section {
+        width: 95%;
+        height: 180px;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
+    footer li, 
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    footer ul, 
+    footer div {
+        padding: 0 3em;
+    }
+
+    .social-icons {
+        display: grid;
+        column-gap: 0.5em;
+    }
+
+    .social-icons i {
+        font-size: 3rem;
+    }
+}
