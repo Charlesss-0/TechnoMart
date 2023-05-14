@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techno Mall</title>
+    <title>TechnoMart </title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 </head>
@@ -15,30 +15,30 @@
                 TechnoMart
             </h1>
         </a>
-        <nav id="navbar">
+        <nav id="nav-bar">
             <ul>
                 <li>
-                    <a href="#Apple">
+                    <a class="nav-link" href="#Apple">
                         Apple
                     </a>
                 </li>
                 <li>
-                    <a href="#Dell">
+                    <a class="nav-link" href="#Dell">
                         Dell
                     </a>
                 </li>
                 <li>
-                    <a href="#Lenovo">
+                    <a class="nav-link" href="#Lenovo">
                         Lenovo
                     </a>
                 </li>
                 <li>
-                    <a href="#Acer">
+                    <a class="nav-link" href="#Acer">
                         Acer
                     </a>
                 </li>
                 <li>
-                    <a href="#Asus">
+                    <a class="nav-link" href="#Asus">
                         Asus
                     </a>
                 </li>
@@ -46,17 +46,23 @@
         </nav>
     </section>
     <main>
-        <section class="hero">
+        <section id="first-hero-section">
+            <header class="hero" id="header">
             <img 
                 src="https://www.apple.com/v/macbook-air-m1/d/images/overview/hero_endframe__ea0qze85eyi6_large.jpg"
                 alt="apple image" 
-                class="hero-image">
+                class="hero-image"
+                id="header-img"
+                >
+            </header>
         </section>
         <section class="catalog">
             <hr>
+            <header id="header">
                 <h2>
                     APPLE
                 </h2>
+            </header>
             <hr>
         </section>
         <section class="products" id="Apple">
@@ -70,13 +76,13 @@
                     <p>
                         From $83.25/mo. for 12 mo. or $999**
                     </p>
-                    <p class="media-apple-display">
+                    <p class="media-apple-display media-apple-display2">
                         13.3-inch Retina display
                     </p>
                     <p class="apple-chipset">
                         Apple M1 chip
                     </p>
-                    <p class="apple-memory">
+                    <p class="apple-memory media-apple-memory">
                         8GB to 16GB unified memory
                     </p>
                     <p>
@@ -102,7 +108,7 @@
                     <p>
                         From $99.91/mo. for 12 mo. or $1199**
                     </p>
-                    <p >
+                    <p class="media-apple-display">
                         13.6-inch Liquid Retina display
                     </p>
                     <p>
@@ -140,7 +146,7 @@
                     <p class="apple-chipset media-apple-chipset">
                         Apple M2 chip
                     </p>
-                    <p class="apple-memory media-apple-memory">
+                    <p class="apple-memory media-apple-memory media-apple-memory2">
                         8GB to 24GB unified memory
                     </p>
                     <p>
@@ -150,7 +156,7 @@
                         Up to 20 hours battery life
                     </p>
                     <p>
-                        Touch Bar and Touch ID
+                        Touch ID
                     </p>
                     <button class="button">
                         Buy
@@ -167,7 +173,7 @@
                         From $166.58/mo. for 12 mo. or $1999**
                     </p>
                     <p>
-                        14.2-inch or 16.2-inch Liquid Retina XDR display
+                        14.2-inch or 16.2-inch Retina display
                     </p>
                     <p>
                         Apple M2 Pro or Apple M2 Max chip
@@ -210,9 +216,9 @@
                 alt="dell laptop"
                 >
                 <h3 class="laptop-name">
-                    Dell Inspiron i7620 7000 Series 2-in-1 Laptop 16" FHD+
+                    Dell Inspiron i7620 7000 Series 16" FHD+
                 </h3>
-                <p>
+                <p class="media-dell-price2">
                     For $1,599
                 </p>
                 <p>
@@ -223,7 +229,7 @@
                     <br>
                     Intel Iris Xe Graphics
                 </p>
-                <p class="dell-ram">
+                <p class="dell-ram media-dell-ram media-dell-ram2">
                     32GB to 64GB RAM 
                 </p>
                 <p>
@@ -244,7 +250,7 @@
                 <h3 class="laptop-name">
                     Dell G16 7620 Gaming Laptop 16" QHD
                 </h3>
-                <p class="dell-price">
+                <p class="dell-price media-dell-price">
                     For $1,349
                 </p>
                 <p>
@@ -258,10 +264,10 @@
                 <p>
                     32GB RAM
                 </p>
-                <p>
+                <p class="media-dell-storage">
                     1TB SSD
                 </p>
-                <p>
+                <p class="media-dell-battery">
                     Up to 6 hours battery life
                 </p>
                 <button class="button">
@@ -314,7 +320,7 @@
                 <p>
                     14" FHD 60Hz
                 </p>
-                <p class="dell-processor">
+                <p class="dell-processor media-dell-processor">
                     Intel Core i7 11th Gen
                     <br>
                     Intel Integrated Graphics
@@ -322,10 +328,10 @@
                 <p class="dell-ram">
                     32GB RAM
                 </p>
-                <p>
+                <p class="dell-storage">
                     1TB SSD
                 </p>
-                <p>
+                <p class="dell-battery">
                     Up to 8 hours battery life
                 </p>
                 <button class="button">
@@ -355,20 +361,20 @@
                 alt="lenovo laptop"
                 >
                 <h3>
-                    Lenovo 2023 IdeaPad Gaming 3 Laptop 15.6" FHD
+                    Lenovo IdeaPad Gaming Laptop 15.6" FHD
                 </h3>
-                <p>
+                <p class="media-lenovo-price">
                     For $1,599
                 </p>
                 <p>
                     15.6" 120Hz FHD IPS Display
                 </p>
-                <p class="lenovo-processor">
+                <p class="lenovo-processor media-lenovo-processor">
                     Intel Core i7 12th Gen
                     <br>
                     NVIDIA® GeForce RTX™ 3050 Ti
                 </p>
-                <p class="lenovo-ram">
+                <p class="lenovo-ram media-lenovo-ram">
                     64GB RAM
                 </p>
                 <p>
@@ -432,7 +438,7 @@
                     <br>
                     Intel Iris Xe Graphics
                 </p>
-                <p class="lenovo-ram">
+                <p class="lenovo-ram2 media-lenovo-ram2">
                     16GB RAM
                 </p>
                 <p>
@@ -453,7 +459,7 @@
                 <h3>
                     Lenovo Slim 7 Notebook Computer 16"
                 </h3>
-                <p>
+                <p class="media-lenovo-price">
                     For $899
                 </p>
                 <p>
@@ -580,7 +586,7 @@
                     16GB RAM
                 </p>
                 <p>
-                    512GB to 1TB SSD
+                    512GB SSD
                 </p>
                 <p>
                     Up to 12 hours battery life
@@ -595,9 +601,9 @@
                 alt="acer laptop"
                 >
                 <h3>
-                    Acer TravelMate P6 P614-52 TMP614-52-73EJ 14" Notebook
+                    Acer TravelMate P6 P614-52 TMP614-52-73EJ 14"
                 </h3>
-                <p>
+                <p class="acer-price">
                     For $1,459
                 </p>
                 <p>
@@ -608,7 +614,7 @@
                     <br>
                     Intel Iris Xe Graphics
                 </p>
-                <p class="acer-ram">
+                <p class="acer-ram media-acer-ram">
                     16GB RAM
                 </p>
                 <p>
@@ -646,7 +652,7 @@
                 <h3>
                     ASUS ROG Strix G17 Gaming Laptop 17.3” QHD
                 </h3>
-                <p>
+                <p class="media-asus-price">
                     For $1,799
                 </p>
                 <p>
@@ -657,7 +663,7 @@
                     <br>
                     NVIDIA® GeForce RTX™ 4060
                 </p>
-                <p>
+                <p class="media-asus-ram">
                     16GB RAM
                 </p>
                 <p>
@@ -768,10 +774,31 @@
             </div>
         </section>
 
+        <section class="form-section">
+            <h2>
+                Let's get started
+            </h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                name="email"
+                type="email"
+                id="submit"
+                placeholder="Email address"
+                required
+                >
+                <input 
+                id="submit"
+                type="submit"
+                value="Send"
+                class="input-button"
+                >
+            </form>
+        </section>
+
         <section class="graphics-video">
             <div class="iframe-wrapper">
                 <iframe 
-                    id="nvidia-rtx"
+                    id="video"
                     src="https://www.youtube.com/embed/zAzyUseCFE8"
                     frameborder="0"
                     allowfullscreen
@@ -780,7 +807,7 @@
             </div>
             <div class="iframe-wrapper">
                 <iframe 
-                    id="apple-m2"
+                    id="video"
                     src="https://www.youtube.com/embed/jwmS1gc9S5A"
                     frameborder="0"
                     allowfullscreen
